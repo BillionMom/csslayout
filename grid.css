@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(221, 246, 246);
+    /*margin: auto;*/
+    max-width: 100vh;
+   
+}
+main{
+display: grid;
+gap: 8px;
+align-content: center;
+height: 100vh;
+margin: 50px;
+grid-template-areas:
+'a a b'
+'c d d'
+'c e e';
+}
+main div{
+    padding: 4em;
+    /*width: 50%;*/
+}
+.meta{
+    background-color: rgb(239, 103, 103);
+    grid-area: a;
+}
+.neta{
+    background-color: rgb(32, 117, 117);
+    grid-area: b;
+}
+.oeta{
+    background-color: rgb(112, 95, 127);
+    grid-area: c;
+}
+.peta{
+    background-color: rgb(222, 244, 169);
+    grid-area: d;
+    grid-area: 20px;
+}
+.qeta{
+    background-color: rgb(120, 188, 115);
+    grid-area: e;
+}
+/*.reta{
+    background-color: rgb(245, 205, 144);
+    grid-area: f;
+}*/

@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&family=Lexend+Deca:wght@100&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  /*text-align: center;*/
+  padding: 4em;
+  justify-content: center;
+  align-content: center;
+  margin: 8vh;
+  font-size: 15px;
+  /*width: 80vh;*/
+  /*position: absolute;*/
+}
+div {
+  width: 16.5%;
+}
+
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+  padding: 2em;
+  text-align: justify;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.suv {
+  background-color: hsl(184, 100%, 22%);
+  padding: 2em;
+  text-align: justify;
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  padding: 2em;
+  text-align: justify;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+h3 {
+  color: hsl(0, 0%, 95%);
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 1000;
+  font-size: 35px;
+}
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "lexend Deca", sans-serif;
+  font-weight: 400;
+}
+button {
+  padding: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  border-radius: 60px;
+  border: none;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  text-align: center;
+  background-color: hsl(0, 0%, 95%);
+  font-size: 12px;
+}
+.sedan button {
+  color: hsl(31, 77%, 52%);
+}
+.suv button {
+  color: hsl(184, 100%, 22%);
+}
+.luxury button {
+  color: hsl(179, 100%, 13%);
+}
+.sedan button:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  border: 1.5px solid hsl(0, 0%, 95%);
+}
+.suv button:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  border: 1.5px solid hsl(0, 0%, 95%);
+}
+.luxury button:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  border: 1.5px solid hsl(0, 0%, 95%);
+}
+
+@media only screen and (max-width: 472px) {
+  .container {
+    display: block;
+    width: 100%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+  div {
+    width: 83.5%;
+    max-width: 100% !important;
+  }
+}
